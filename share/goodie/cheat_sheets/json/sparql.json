@@ -1,0 +1,46 @@
+{
+    "id": "sparql_cheat_sheet",
+    "name": "Sparql",
+    "description": "SPARQL protocol and RDF query language",
+
+    "metadata": {
+        "sourceName": "displayed at the bottom of the AnswerBar; optional",
+        "sourceUrl" : "https://url.to.the.source"
+    },
+
+    "aliases": [
+        "rdf query", "linked data query"
+    ],
+
+    "template_type": "code",
+
+    "section_order": [
+        "Query types",
+        "Second Section"
+    ],
+
+    "sections": {
+        "Query types": [
+            {
+                "key": "SELECT ?var1 ?var2 ?var3",
+                "val": "Project variables 'var1', etc."
+            },
+            {
+                "key": "CONSTRUCT \\{:a :b :c\\}",
+                "val": "Construct RDF triples"
+            },
+            {"key":"ASK","val":"ask"},
+            {"key":"DESCRIBE","val":"describe"}
+        ],
+        "Second Section": [
+            {
+                "key": "Key 2.1",
+                "val": "Value 2.2"
+            },
+            {
+                "key": "Key 2.2",
+                "val": "Value 2.2"
+            }
+        ]
+    }
+}
