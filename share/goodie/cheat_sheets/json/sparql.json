@@ -26,8 +26,16 @@
 
     "sections": {
         "Overview": [
-            {"key":"[PREFIX] pref: <http://example.com//>\nFROM ...\nSELECT ...\nWHERE \\{\n\\}\nORDER BY",
-             "val":"prefix, select and modifiers"}
+            {"key":"PREFIX pref: <http://example.com//>",
+             "val":"Associates a prefix label with an IRI (optional)"},
+            {"key":"FROM ...",
+             "val":"Define the dataset to which the query applies (optional)"},¨
+            {"key":"SELECT ...",
+             "val":"Query forms"},
+            {"key":"WHERE \\{...\\}",
+             "val":"Query patterns"},
+            {"key":"GROUP BY ...\nHAVING ... \nORDER BY ...\nLIMIT ...\nOFFSET ...",
+             "val":"Query modifiers"}
         ],
         "Query types": [
             {
