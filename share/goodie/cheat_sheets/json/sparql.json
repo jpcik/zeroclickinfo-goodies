@@ -29,7 +29,7 @@
             {"key":"PREFIX pref: <http://example.com//>",
              "val":"Associates a prefix label with an IRI (optional)"},
             {"key":"FROM ...",
-             "val":"Define the dataset to which the query applies (optional)"},¨
+             "val":"Define the dataset to which the query applies (optional)"},
             {"key":"SELECT ...",
              "val":"Query forms"},
             {"key":"WHERE \\{...\\}",
