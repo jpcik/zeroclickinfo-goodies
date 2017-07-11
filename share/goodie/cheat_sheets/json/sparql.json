@@ -16,12 +16,11 @@
 
     "section_order": [
         "Overview",
-        "Query types",
+        "Query forms",
         "Graph patterns",
         "Filters",
-        "Query Dataset"
-        
-        
+        "Dataset",
+        "SPARQL Update"   
     ],
 
     "sections": {
@@ -49,14 +48,26 @@
             {"key":"ASK","val":"ask"},
             {"key":"DESCRIBE","val":"describe"}
         ],
-        "Second Section": [
+        "Graph patterns": [
             {
-                "key": "Key 2.1",
-                "val": "Value 2.2"
+                "key": ":s :p :o",
+                "val": "Triple pattern"
             },
             {
-                "key": "Key 2.2",
-                "val": "Value 2.2"
+                "key": ":s1 :p1 :o1 .\n:s2 :p2 :o2 ",
+                "val": "Basic graph pattern: conjunction"
+            },
+            {
+                "key": ":s1 :p1 :o1 \nOPTIONAL \\{:s2 :p2 :o2\\} ",
+                "val": "Optional graph pattern"
+            },
+            {
+                "key": "\\{:s1 :p1 :o1\\} \nUNION \\{:s2 :p2 :o2\\} ",
+                "val": "Disjunction graph pattern"
+            },
+            {
+                "key": "\\{:s1 :p1 :o1\\} \nMINUS \\{:s2 :p2 :o2\\} ",
+                "val": "Susbstract graph pattern"
             }
         ]
     }
