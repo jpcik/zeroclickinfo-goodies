@@ -19,16 +19,16 @@
         "Query types",
         "Graph patterns",
         "Filters",
-        "Query Dataset",
+        "Query Dataset"
         
         
     ],
 
     "sections": {
         "Overview": [
-            {"key":"PREFIX pref: <http://example.com//>\nFROM ...\nSELECT ...\nWHERE \\{\n\\}\nORDER BY",
+            {"key":"[PREFIX] pref: <http://example.com//>\nFROM ...\nSELECT ...\nWHERE \\{\n\\}\nORDER BY",
              "val":"prefix, select and modifiers"}
-        ]
+        ],
         "Query types": [
             {
                 "key": "SELECT ?var1 ?var2 ?var3",
