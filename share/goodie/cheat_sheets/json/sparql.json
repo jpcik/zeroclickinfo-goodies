@@ -27,9 +27,9 @@
     "sections": {
         "Overview": [
             {"key":"PREFIX pref: <http://example.com//>",
-             "val":"Associates a prefix label with an IRI (optional)"},
+             "val":"Associate prefix with an IRI (optional)"},
             {"key":"FROM ...",
-             "val":"Define the dataset to which the query applies (optional)"},
+             "val":"Define the dataset to which the query applies"},
             {"key":"SELECT ...",
              "val":"Query forms"},
             {"key":"WHERE \\{...\\}",
@@ -37,7 +37,7 @@
             {"key":"GROUP BY ...\nHAVING ... \nORDER BY ...\nLIMIT ...\nOFFSET ...",
              "val":"Query modifiers"}
         ],
-        "Query types": [
+        "Query forms": [
             {
                 "key": "SELECT ?var1 ?var2 ?var3",
                 "val": "Project variables 'var1', etc."
