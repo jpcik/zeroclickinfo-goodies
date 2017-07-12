@@ -12,7 +12,7 @@
         "rdf query", "linked data query"
     ],
 
-    "template_type": "code",
+    "template_type": "terminal",
 
     "section_order": [
         "Overview",
@@ -37,38 +37,34 @@
              "val":"Query modifiers"}
         ],
         "Query forms": [
-            {
-                "key": "SELECT ?var1 ?var2 ?var3",
-                "val": "Project variables 'var1', etc."
-            },
-            {
-                "key": "CONSTRUCT \\{:a :b :c\\}",
-                "val": "Construct RDF triples"
-            },
-            {"key":"ASK","val":"ask"},
-            {"key":"DESCRIBE","val":"describe"}
+            {"key": "SELECT ?var1 ?var2 ",
+             "val": "Project out variables "},
+            {"key": "CONSTRUCT \\{:a :b :c\\}",
+             "val": "Construct RDF triples"},
+            {"key":"ASK",
+             "val":"Ask (boolean) if there are matches"},
+            {"key":"DESCRIBE ?var",
+             "val":"Describe in RDF the matched variables"}
         ],
         "Graph patterns": [
-            {
-                "key": ":s :p :o",
-                "val": "Triple pattern"
-            },
-            {
-                "key": ":s1 :p1 :o1 .\n:s2 :p2 :o2 ",
-                "val": "Basic graph pattern: conjunction"
-            },
-            {
-                "key": ":s1 :p1 :o1 \nOPTIONAL \\{:s2 :p2 :o2\\} ",
-                "val": "Optional graph pattern"
-            },
-            {
-                "key": "\\{:s1 :p1 :o1\\} \nUNION \\{:s2 :p2 :o2\\} ",
-                "val": "Disjunction graph pattern"
-            },
-            {
-                "key": "\\{:s1 :p1 :o1\\} \nMINUS \\{:s2 :p2 :o2\\} ",
-                "val": "Susbstract graph pattern"
-            }
+            {"key": ":s :p :o",
+             "val": "Triple pattern"},
+            {"key": ":s1 :p1 :o1 .\n:s2 :p2 :o2 ",
+             "val": "Basic graph pattern: conjunction"},
+            {"key": ":s1 :p1 :o1 \nOPTIONAL \\{:s2 :p2 :o2\\} ",
+             "val": "Optional graph pattern"},
+            {"key": "\\{:s1 :p1 :o1\\} \nUNION \\{:s2 :p2 :o2\\} ",
+             "val": "Disjunction graph pattern"},
+            {"key": "\\{:s1 :p1 :o1\\} \nMINUS \\{:s2 :p2 :o2\\} ",
+             "val": "Susbstract graph pattern"}
+        ],
+        "Filters": [
+            {"key": "FILTER ( ...expression )",
+             "val": "Filter pattern"},
+            {"key": "=, !=, <, >, <=, >=",
+             "val": "Comparison filter"},
+            {"key": "!, &&, ||",
+             "val": "Logical filter"}
         ]
     }
 }
