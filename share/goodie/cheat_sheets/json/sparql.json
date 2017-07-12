@@ -15,12 +15,13 @@
     "template_type": "terminal",
 
     "section_order": [
-        "Overview",
+        "Overview-no",
         "Query forms",
         "Graph patterns",
         "Filters",
+        "Functions",
         "Dataset",
-        "SPARQL Update"   
+        "Aggregates"   
     ],
 
     "sections": {
@@ -65,6 +66,57 @@
              "val": "Comparison filter"},
             {"key": "!, &&, ||",
              "val": "Logical filter"}
+        ],
+        "Functions": [
+            {"key": "BOUND (?var)",
+             "val": "true if bound to a value"},
+            {"key": "IF (?x=2,\"yes\",\"no\")",
+             "val": "if condition is true, return ast expression, 2nd otherwise"},
+            {"key": "NOT EXISTS \\{ pattern \\}",
+             "val": "return false if pattern matches"},
+            {"key": "EXISTS \\{ pattern \\}",
+             "val": "return true if pattern matches"},
+            {"key": "rdfTerm (NOT) IN \\{ expression, ... \\}",
+             "val": "return true if pattern matches"},            
+            {"key": "isIRI(?var)",
+             "val": "true if term is an IRI"},            
+            {"key": "isBlank(?var)",
+             "val": "true if is blank node"},            
+            {"key": "isLiteral(?var)",
+             "val": "true is a literal"},            
+            {"key": "regex(?var, \"^SPARQL\")",
+             "val": "true if matches regex"},            
+            {"key": "EXISTS \\{ pattern \\}",
+             "val": "return true if pattern matches"},            
+            {"key": "EXISTS \\{ pattern \\}",
+             "val": "return true if pattern matches"},            
+            {"key": "EXISTS \\{ pattern \\}",
+             "val": "return true if pattern matches"},            
+            {"key": "EXISTS \\{ pattern \\}",
+             "val": "return true if pattern matches"} 
+        ],
+        "Dataset": [
+            {"key": "FROM < Graph IRI >",
+             "val": "Default graph"},
+            {"key": "FROM NAMED < Graph IRI >",
+             "val": "Named graph"},
+            {"key": "FROM < Graph IRI >",
+             "val": "Default graph"},
+            {"key": "GRAPH ?var \\{ graph pattern \\}",
+             "val": "Access graph name"},
+            {"key": "GRAPH < graph IRI > \\{ graph pattern \\}",
+             "val": "Restrict by graph IRI"}
+        ],
+        "Aggregates": [
+            {"key": "GROUP BY ?var",
+             "val": "group by expression"},
+            {"key": "HAVING (  expression )",
+             "val": "filter over grouped sets"},
+            {"key": "SELECT (AVG(?var) as ?avg)",
+             "val": "aggregate projections"},
+            {"key": "COUNT, SUM, MIN, MAX, AVG, GROUP_CONCAT ",
+             "val": "aggregate functions"}
+            
         ]
     }
 }
