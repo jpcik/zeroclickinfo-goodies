@@ -25,15 +25,15 @@
 
     "sections": {
         "Overview": [
-            {"key":"PREFIX pref: <http://example.com//>",
-             "val":"Associate prefix with an IRI (optional)"},
+            {"key":"PREFIX pref: <http://...>",
+             "val":"Associate prefix to IRI"},
             {"key":"FROM ...",
-             "val":"Define the dataset to which the query applies"},
+             "val":"Define the dataset "},
             {"key":"SELECT ...",
              "val":"Query forms"},
             {"key":"WHERE \\{...\\}",
              "val":"Query patterns"},
-            {"key":"GROUP BY ...\nHAVING ... \nORDER BY ...\nLIMIT ...\nOFFSET ...",
+            {"key":"GROUP BY, HAVING, ORDER BY, LIMIT, OFFSET ...",
              "val":"Query modifiers"}
         ],
         "Query forms": [
